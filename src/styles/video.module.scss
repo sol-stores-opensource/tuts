@@ -1,0 +1,63 @@
+@import './_global.scss';
+@import '/src/_variables.scss';
+
+.video_container {
+  position: relative;
+  pointer-events: none;;
+
+  .video {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    pointer-events: auto;
+  }
+
+  .controls_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .play {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(21px);
+      border-radius: 23px;
+      padding: 5px 20px;
+      font-family: DiaMono;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+
+    .play_icon {
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      margin-right: 7px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='18' viewBox='0 0 16 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 8.93103C16 11.1259 15.1571 13.2309 13.6569 14.7829C12.1566 16.335 10.1217 17.2069 8 17.2069C5.87827 17.2069 3.84344 16.335 2.34315 14.7829C0.842855 13.2309 0 11.1259 0 8.93103C0 6.73613 0.842855 4.63114 2.34315 3.07911C3.84344 1.52709 5.87827 0.655167 8 0.655167C10.1217 0.655167 12.1566 1.52709 13.6569 3.07911C15.1571 4.63114 16 6.73613 16 8.93103ZM6.79 5.92379C6.71524 5.86872 6.62726 5.836 6.53572 5.82922C6.44418 5.82244 6.35259 5.84185 6.27101 5.88533C6.18942 5.92881 6.12098 5.99469 6.07317 6.07574C6.02537 6.15678 6.00006 6.24988 6 6.34482V11.5172C6.00006 11.6122 6.02537 11.7053 6.07317 11.7863C6.12098 11.8674 6.18942 11.9332 6.27101 11.9767C6.35259 12.0202 6.44418 12.0396 6.53572 12.0328C6.62726 12.0261 6.71524 11.9933 6.79 11.9383L10.29 9.35206C10.3548 9.30422 10.4076 9.24105 10.4441 9.16781C10.4805 9.09458 10.4996 9.0134 10.4996 8.93103C10.4996 8.84866 10.4805 8.76748 10.4441 8.69424C10.4076 8.62101 10.3548 8.55784 10.29 8.50999L6.79 5.92379Z' fill='black'/%3E%3C/svg%3E%0A");
+    }
+
+    .mute {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      pointer-events: auto;
+      border-radius: 23px;
+      padding: 5px 20px;
+      font-family: DiaMono;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+

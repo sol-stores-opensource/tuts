@@ -1,0 +1,27 @@
+@import './_global.scss';
+@import '/src/_variables.scss';
+
+.button {
+  @extend %button;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: $font-heavy;
+}
+
+.button_secondary {
+  @extend %button_outline;
+}
+
+.redarrowup {
+  height: 72px;
+  margin-right: 16px;
+}
+
+.text {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-right: 16px;
+  margin-left: 16px;
+}

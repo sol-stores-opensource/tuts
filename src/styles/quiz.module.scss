@@ -1,0 +1,118 @@
+@import './_global.scss';
+
+@import './_global.scss';
+@import '/src/_variables.scss';
+.container {
+  @extend %container;
+  position: relative;
+  padding-top: 20px;
+}
+
+.score_container {
+  @extend %container;
+  position: relative;
+  padding-top: 250;
+}
+
+.button_container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  @extend %button;
+  position: relative;
+  font-weight: $font-heavy;
+  width: 100%;
+  border-radius: 0;
+  font-family: DiaMono;
+}
+
+.button_disabled {
+  @extend %button;
+  font-weight: $font-heavy;
+  width: 100%;
+  border-radius: 0;
+  font-family: DiaMono;
+  background-color: #b77bff;
+}
+
+.headline {
+  @extend %headline;
+}
+
+.p_title {
+  font-weight: $font-heavy;
+  font-family: Dia;
+  font-size: 25px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.p_body {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+}
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.top_logo {
+  display: block;
+  height: 32px;
+}
+
+.center {
+  text-align: center;
+}
+
+.quiz_count {
+  font-weight: $font-heavy;
+  font-size: 16px;
+  font-family: Dia;
+  text-align: right;
+  color: $accent-20;
+  margin-bottom: 8px;
+}
+
+.quiz_question {
+  border: 1px #333 solid;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.wrong {
+  border-color: red;
+  color: red;
+}
+
+.right {
+  border-color: green;
+  color: green;
+}
+
+.other_answer {
+  border-color: rgb(209, 209, 209);
+  color: rgb(209, 209, 209);
+}
+
+.quiz_title {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'DiaMono';
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}

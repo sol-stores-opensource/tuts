@@ -1,0 +1,145 @@
+@import './_global.scss';
+
+.container {
+  @extend %container;
+  margin: 5rem auto 0;
+}
+
+.step_box {
+  padding-top: 24px;
+  border-top: 1px solid #cfcfcf;
+  flex: 1 1 auto;
+  color: #000;
+}
+
+.done_block {
+  text-align: center;
+
+  .headline {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.button {
+  @extend %button;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+
+  &.disabled {
+    background-color: #efefef;
+    cursor: not-allowed;
+  }
+}
+
+.headline {
+  @extend %headline;
+  text-align: left;
+  max-width: 760px;
+
+  span {
+    color: #9945ff;
+  }
+
+  &.reward {
+    display: inline-block;
+    border-bottom: 5px solid #cacfd3;
+    padding-bottom: 10px;
+    margin-bottom: 75px;
+  }
+}
+
+.description {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+  margin-bottom: 45px;
+}
+
+.title {
+  color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 20px;
+
+  + p {
+    color: inherit;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.loading {
+  color: #000;
+  margin-bottom: 75px;
+  font-size: 20px;
+  line-height: 150%;
+  margin-top: 100px;
+}
+
+.waiting,
+.completed {
+  font-family: DiaMono;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+  gap: 6px;
+  border: 1px solid #767a7f;
+  border-radius: 50px;
+  color: #767a7f;
+}
+
+.completed {
+  border: 1px solid #9945ff;
+  color: #9945ff;
+}
+
+.step_container {
+  display: flex;
+  gap: 40;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+.image {
+  display: block;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.reward_title {
+  @extend .title;
+  border-top: 1px solid #cfcfcf;
+  padding: 15px 30px 15px 0;
+  display: inline-block;
+  margin-bottom: 75px;
+  span {
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+  }
+
+  &.rewarded {
+    color: #9945ff;
+    border-color: #9945ff;
+  }
+}
+
+.done_block {
+  .headline {
+    margin-bottom: 60px;
+  }
+
+  .description {
+    color: #000;
+  }
+
+  .button {
+    @extend %button_outline;
+  }
+}

@@ -1,0 +1,242 @@
+@import './_global.scss';
+@import '/src/_variables.scss';
+.container {
+  @extend %container;
+  position: relative;
+  padding-top: 20px;
+}
+
+.button_container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  @extend %button;
+  position: relative;
+  font-weight: $font-heavy;
+  width: 100%;
+  border-radius: 0;
+  font-family: DiaMono;
+}
+
+.button_disabled {
+  @extend %button;
+  font-weight: $font-heavy;
+  width: 100%;
+  border-radius: 0;
+  font-family: DiaMono;
+  background-color: #b77bff;
+}
+
+.headline {
+  @extend %headline;
+}
+
+.small_headline {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.image {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: auto;
+  width: 100%;
+}
+
+.video {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.partner_container {
+  background: #ffffff;
+  box-shadow: 0px 6px 24px rgba(164, 172, 172, 0.12);
+  border-radius: 12px;
+}
+
+.p_title {
+  font-weight: $font-heavy;
+  font-family: Dia;
+  font-size: 30px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.p_body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  padding-bottom: 30px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+  padding-top: 15px;
+}
+
+.top_logo {
+  display: block;
+  height: 32px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.step_count {
+  font-weight: $font-heavy;
+  font-family: Dia;
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 13px;
+  color: #989898;
+}
+
+.partner_name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.header_block {
+  background-color: #f9f9f9;
+}
+
+.line_container {
+  position: relative;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding-bottom: 12px;
+}
+
+.line,
+.fill_line {
+  height: 10px;
+  border-radius: 14px;
+  width: 100%;
+  background-color: #d9d9d9;
+  display: block;
+}
+
+.fill_line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #9945ff;
+  width: 0%;
+  transition: width 300ms;
+}
+
+.close_bar {
+  font-size: 12px;
+  line-height: 10px;
+  background-color: #000;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'DiaMono';
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  p {
+    color: #d9d9d9;
+  }
+}
+
+.congrats {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.done_body {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #000000;
+  text-align: center;
+}
+
+.partner_name_done {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.lookout {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000000;
+}
+
+.more_tuts {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 158.1%;
+  text-align: center;
+  color: #000000;
+  padding: 0 30px;
+}
+
+.nft_block {
+  margin-bottom: 30px;
+}
+
+.bg_done {
+  width: 230vw;
+  height: 150vh;
+  background-color: #ededed;
+  border-radius: 100%;
+  position: fixed;
+  top: 50vh;
+  left: -50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.outer_end_container {
+  transform: translate3d(0, 0, 0);
+}
+
+.close_arrow {
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='11' viewBox='0 0 11 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.375 3.8125L7.1875 1L10 3.8125' stroke='white' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 10H4.9375C5.53424 10 6.10653 9.76295 6.52849 9.34099C6.95045 8.91903 7.1875 8.34674 7.1875 7.75V1' stroke='white' stroke-width='1.125' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 11px;
+  height: 11px;
+  margin-left: auto;
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  top: 7px;
+}

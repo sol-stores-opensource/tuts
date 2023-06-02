@@ -1,0 +1,64 @@
+@import '/src/_variables.scss';
+
+%button {
+  background-color: $accent-30;
+  color: #fff;
+  font-weight: $font-medium;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30px;
+  gap: 10px;
+  font-family: DiaMono;
+
+  width: 180px;
+
+  /* Primary/Solana Purple */
+
+  background: #9945ff;
+  border-radius: 100px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: #fff;
+  }
+
+  &.selected {
+    background-color: $base-40;
+  }
+}
+
+%headline {
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-weight: $font-heavy;
+  font-family: Dia;
+  text-align: center;
+  color: #000;
+  line-height: 52px;
+}
+
+%container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+%button_outline {
+  @extend %button;
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: #000;
+  }
+}

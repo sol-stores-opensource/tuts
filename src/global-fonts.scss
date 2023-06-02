@@ -1,0 +1,46 @@
+@import '_variables.scss';
+
+@font-face {
+  font-family: Dia;
+  font-style: normal;
+  font-weight: $font-bold;
+  src: url('./fonts/ABCDiatype-Bold.woff2') format('woff2'), url('./fonts/ABCDiatype-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: DiaMono;
+  font-style: normal;
+  font-weight: $font-bold;
+  src: url('./fonts/ABCDiatypeSemi-Mono-Bold.woff2') format('woff2'),
+    url('./fonts/ABCDiatypeSemi-Mono-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: DiaMono;
+  font-style: normal;
+  font-weight: $font-regular;
+  src: url('./fonts/ABCDiatypeSemi-Mono-Regular.woff2') format('woff2'),
+    url('./fonts/ABCDiatypeSemi-Mono-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: DiaMono;
+  font-style: normal;
+  font-weight: $font-medium;
+  src: url('./fonts/ABCDiatypeSemi-Mono-Medium.woff2') format('woff2'),
+    url('./fonts/ABCDiatypeSemi-Mono-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: Dia;
+  font-style: normal;
+  font-weight: $font-regular;
+  src: url('./fonts/ABCDiatype-Regular.woff2') format('woff2'), url('./fonts/ABCDiatype-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Dia;
+  font-style: normal;
+  font-weight: $font-medium;
+  src: url('./fonts/ABCDiatype-Medium.woff2') format('woff2'), url('./fonts/ABCDiatype-Medium.woff') format('woff');
+}

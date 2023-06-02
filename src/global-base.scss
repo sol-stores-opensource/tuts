@@ -1,0 +1,72 @@
+@import '_variables.scss';
+
+body {
+  background: #fff;
+  color: $base-50;
+  font-size: 14px;
+  /* font-size: $rem-base; */
+  font-family: 'Dia';
+  font-weight: $font-regular;
+  line-height: 24px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+input {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: $base-50;
+  font-family: 'Dia', Arial, Helvetica, sans-serif;
+}
+
+select::-webkit-input-placeholder {
+  font-family: 'Dia', Arial, Helvetica, sans-serif;
+}
+
+select:-ms-input-placeholder {
+  font-family: 'Dia', Arial, Helvetica, sans-serif;
+}
+
+select:-moz-placeholder {
+  font-family: 'Dia', Arial, Helvetica, sans-serif;
+}
+
+select::-moz-placeholder {
+  font-family: 'Dia', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $accent-20;
+  transition: color 200ms;
+
+  &:hover {
+    color: $accent-30;
+  }
+}
+
+p {
+  color: $base-40;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+em {
+  font-style: italic;
+}
